@@ -42,13 +42,13 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
 	name="pyHTTPRequestRouter",
-	version="0.1.0",
+	version="0.1.1",
 	author="Patrick Lehmann",
 	author_email="Paebbels@gmail.com",
 	description="A ReST API implementation (request router) using the pyHTTPInterface.",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	url="https://github.com/Paebbels/pyReSTAPI",
+	url="https://github.com/Paebbels/pyHTTPRequestRouter",
 	packages=setuptools.find_packages(),
 	classifiers=[
 		"License :: OSI Approved :: Apache Software License",

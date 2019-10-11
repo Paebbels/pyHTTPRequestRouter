@@ -35,8 +35,8 @@
 # limitations under the License.
 # ============================================================================
 #
-from pyAttributes    import Attribute, AttributeHelperMixin
-from pyHTTPInterface import HTTPMethods
+from pyAttributes     import Attribute, AttributeHelperMixin
+from pyHTTPInterface  import HTTPMethods
 
 
 __api__ = [

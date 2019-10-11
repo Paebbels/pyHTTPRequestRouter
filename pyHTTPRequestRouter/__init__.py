@@ -37,9 +37,9 @@
 #
 from typing import List
 
-from lib.pyHTTPInterface import HTTPMethods, Request, HTTPRequestHandler
-from lib.pyGenericPath import SystemMixIn
-from lib.pyHTTPRequestRouter.Attributes import RoutingAttribute, GETRoute, POSTRoute, DELETERoute
+from pyGenericPath                  import SystemMixIn
+from pyHTTPInterface                import HTTPMethods, Request
+from pyHTTPRequestRouter.Attributes import RoutingAttribute, GETRoute, POSTRoute, DELETERoute
 
 
 class Route():
@@ -56,7 +56,7 @@ class Route():
 		return "{method}: {path!s}".format(method=self._httpMethods.to_simple_str(), path=self._path)
 
 
-class Router(SystemMixIn, HTTPRequestHandler):
+class Router(SystemMixIn):
 	_api = None
 	__routes : List = None
 
