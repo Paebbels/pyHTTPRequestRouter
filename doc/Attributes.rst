@@ -61,5 +61,5 @@ ReSTAPIMixin
 
 .. seealso::
 
-   Base attribute class :py:exc:`Attribute`
+   Base attribute class :py:class:`Attribute`
       Base class for all attributes from pyAttributes package.
