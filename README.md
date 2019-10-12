@@ -9,7 +9,7 @@
 
 # pyHTTPRequestRouter
 
-Description
+A ReST API implementation (request router) using the pyHTTPInterface.
 
 
 ## Contributors:

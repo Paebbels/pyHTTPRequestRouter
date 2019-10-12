@@ -10,9 +10,9 @@
 #  | .__/ \__, |_| |_| |_|   |_| |_|   |_| \_\___|\__, |\__,_|\___||___/\__|_| \_\___/ \__,_|\__\___|_|
 #  |_|    |___/                                      |_|
 # =============================================================================
-# Authors:						Patrick Lehmann
+# Authors:           Patrick Lehmann
 #
-# Python module:	    A ReST API implementation (request router) using the pyHTTPInterface.
+# Python installer:  A ReST API implementation (request router) using the pyHTTPInterface.
 #
 # Description:
 # ------------------------------------
@@ -40,19 +40,42 @@ import setuptools
 with open("README.md", "r") as file:
 	long_description = file.read()
 
+requirements = []
+with open("requirements.txt") as file:
+	for line in file.readlines():
+		requirements.append(line)
+
+projectName = "pyHTTPRequestRouter"
+
+github_url =  "https://github.com/Paebbels/" + projectName
+rtd_url =     "https://" + projectName + ".readthedocs.io/en/latest/"
+
 setuptools.setup(
-	name="pyHTTPRequestRouter",
-	version="0.1.1",
+	name=projectName,
+	version="0.1.2",
+
 	author="Patrick Lehmann",
 	author_email="Paebbels@gmail.com",
+	# maintainer="Patrick Lehmann",
+	# maintainer_email="Paebbels@gmail.com",
+
 	description="A ReST API implementation (request router) using the pyHTTPInterface.",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	url="https://github.com/Paebbels/pyHTTPRequestRouter",
+
+	url=github_url,
+	project_urls={
+		'Documentation': rtd_url,
+		'Source Code':   github_url,
+		'Issue Tracker': github_url + "/issues"
+	},
+	# download_url="",
+
 	packages=setuptools.find_packages(),
 	classifiers=[
 		"License :: OSI Approved :: Apache Software License",
 		"Operating System :: OS Independent",
+		"Programming Language :: Python :: 3 :: Only",
 		"Programming Language :: Python :: 3.5",
 		"Programming Language :: Python :: 3.6",
 		"Programming Language :: Python :: 3.7",
@@ -63,5 +86,10 @@ setuptools.setup(
 		#		"Development Status :: 5 - Production/Stable",
 		"Topic :: Utilities"
 	],
+	keywords="Python3 HTTP Request-Router JSON ReST",
+
 	python_requires='>=3.5',
+	install_requires=requirements,
+	# provides=
+	# obsoletes=
 )
