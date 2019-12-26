@@ -1,7 +1,6 @@
 # EMACS settings: -*-  tab-width: 2; indent-tabs-mode: t -*-
 # vim: tabstop=2:shiftwidth=2:noexpandtab
 # kate: tab-width 2; replace-tabs off; indent-width 2;
-#
 # =============================================================================
 #               _   _ _____ _____ ____  ____                            _   ____             _
 #   _ __  _   _| | | |_   _|_   _|  _ \|  _ \ ___  __ _ _   _  ___  ___| |_|  _ \ ___  _   _| |_ ___ _ __
@@ -52,7 +51,7 @@ rtd_url =     "https://" + projectName + ".readthedocs.io/en/latest/"
 
 setuptools.setup(
 	name=projectName,
-	version="0.1.3",
+	version="0.1.4",
 
 	author="Patrick Lehmann",
 	author_email="Paebbels@gmail.com",
